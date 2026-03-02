@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha de Postulación</title>
+</head>
+<body>
+    <ul>
+    
+    <a href="#">Volver a ofertas</a>
+
+    <h1>Ficha de Postulación</h1>
+    <p>Puesto: <strong>Frontend Developer Trainee</strong></p>
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <p>
+                <label for="nombre">Nombre Completo:</label><br>
+                <input type="text" id="nombre" name="nombre">
+            </p>
+
+            <p>
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo">
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Perfil Técnico</legend>
+
+            <p>
+                <label for="github">Link de GitHub:</label><br>
+                <input type="url" id="github" name="github">
+            </p>
+
+            <p>
+                <label for="ingles">Nivel de Inglés:</label><br>
+                <select id="ingles" name="ingles">
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+            </p>
+
+            <p>Tecnologías que conoces:</p>
+            
+            <input type="checkbox" id="html5" name="tech" value="html5">
+            <label for="html5">HTML5</label><br>
+
+            <input type="checkbox" id="css3" name="tech" value="css3">
+            <label for="css3">CSS3</label><br>
+
+            <input type="checkbox" id="js" name="tech" value="js">
+            <label for="js">JavaScript</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar Postulación</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primer Portal de Empleos</title>
+    <style>
+        /* Estilos básicos para que no se vea desordenado */
+        body { font-family: sans-serif; }
+        
+        /* El menú de arriba */
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            justify-content: flex-end; /* Lo manda a la derecha */
+            gap: 15px; 
+        }
+
+        /* El encabezado centrado */
+        header { text-align: center; margin: 40px 0; }
+
+        /* La tabla */
+        table { width: 100%; border-collapse: collapse; }
+        th { background-color: #007bff; color: white; padding: 10px; }
+        td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        
+        /* El botón verde */
+        .boton-aplicar { background-color: #28a745; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <!-- Tu lista (ul) para el menú superior -->
+    <nav>
+        <ul>
+            <li>Empresas</li>
+            <li>Blog</li>
+            <li>Login</li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>DevJobs</h1>
+        <p>Encuentra tu primer empleo TI en Perú</p>
+        
+        <!-- Un buscador simple -->
+        <input type="text" placeholder="Ej. Desarrollador">
+        <button>Buscar</button>
+    </header>
+
+    <main>
+        <h3>Últimas Ofertas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Puesto</th>
+                    <th>Empresa</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hace 2h</td>
+                    <td>Frontend Developer</td>
+                    <td>TechSolutions</td>
+                    <td><button class="boton-aplicar">Aplicar</button></td>
+                </tr>
+                <tr>
+                    <td>Ayer</td>
+                    <td>Soporte Técnico</td>
+                    <td>Banco BCP</td>
+                    <td><button class="boton-aplicar">Aplicar</button></td>
+                </tr>
+            </tbody>
+                <tr>
+                    <td>Hace 2 dias</td>
+                    <td>Practicante.NET</td>
+                    <td>SoftwareOne</td>
+                    <td><button class="boton-aplicar">Aplicar</button></td>
+                </tr>
+        </table>
+    </main>
+
+</body>
+</html>
